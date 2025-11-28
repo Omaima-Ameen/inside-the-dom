@@ -5,6 +5,8 @@ So I made this little space to document what I learned about the DOM.
 
 If you’re someone who wants to understand the fundamentals instead of just memorizing syntax, this might help you too.
 
+
+
 ## What is the DOM? ##
 
 Think of the DOM as the browser’s living, breathing version of your HTML.
@@ -20,7 +22,9 @@ HTML - parsed - turned into nodes- connected into a tree and we get the **DOM**
 It’s not a **JavaScript** structure.
 It’s the browser’s own internal structure that JavaScript gets access to.
 
-Why does the DOM feel **heavy**?
+
+
+## Why does the DOM feel **heavy**? ##
 
 Because it’s not a simple object sitting inside JS.
 
@@ -49,7 +53,11 @@ One tiny change can wake up the entire rendering pipeline.
 
 This is why **updating the DOM too often** slows the UI.
 
-Why does React care so much about this?
+
+
+
+## Why does React care so much about this?##
+
 
 Because the DOM is expensive to touch.
 
@@ -57,6 +65,8 @@ React tries to minimize how many times it interacts with the DOM by doing most o
 
 
 React basically just try to avoid bothering the browser unnecessarily.
+
+
 
 
 ## How does the browser update the UI? ##
