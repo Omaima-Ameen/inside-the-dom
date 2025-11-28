@@ -1,7 +1,7 @@
-I  wanted to know how things actually work on the web so got into the under-the-hood stuff 
+**Hello!**
 
-So I made this little space to document what I learned about the DOM.
-
+I got curious about what really happens behind the scenes on the web, so I started exploring the under the hood side of things.
+This repo is just me documenting what I’m learning about the DOM along the way.
 
 If you’re someone who wants to understand the fundamentals instead of just memorizing syntax, this might help you too.
 
@@ -24,7 +24,7 @@ It’s the browser’s own internal structure that JavaScript gets access to.
 
 
 
-## Why does the DOM feel **heavy**? ##
+## Why does the DOM feel **heavy**? 
 
 Because it’s not a simple object sitting inside JS.
 
@@ -39,19 +39,24 @@ element.innerText = "Hey";
 
 looks harmless, but behind the scenes the browser may need to:
 
-recalculate styles
+Recalculate styles
 
-measure layout
+Measure layout
 
-repaint pixels
+Repaint pixels
 
-update layers
+Update layers
 
-draw the new frame on the screen
+Draw the new frame on the screen
+
 
 One tiny change can wake up the entire rendering pipeline.
 
+
 This is why **updating the DOM too often** slows the UI.
+
+
+
 
 
 
@@ -91,19 +96,28 @@ This whole sequence is what makes a website **feel** smooth or laggy.
 
 I always used the DOM without truly understanding how deep it goes.
 
+
 And when I started learning React internals and browser internals, everything suddenly made a lot more sense.
 
 So I decided to write this down in the simplest possible way.
+
+
+
 
 
 If you’re someone who is learning React& wants to understand rendering and keeps hearing **DOM is slow but JS is fast**
 
 or simply enjoys going a bit deeper than tutorials
 
+
 …then this short explanation might be useful to you.
 
 
 I’ll keep expanding this as I learn more.
+
+
+
+
 
 If you notice anything missing, unclear, or incorrect, you’re always welcome to open an issue or suggest improvements.
 I’d genuinely appreciate it.
