@@ -24,6 +24,20 @@ It’s the browser’s own internal structure that JavaScript gets access to.
 
 
 
+            ┌───────────────┐
+            │    HTML File   │
+            └───────┬───────┘
+                    ↓
+            ┌───────────────┐
+            │   HTML Parser  │
+            └───────┬───────┘
+                    ↓
+          ┌─────────────────────┐
+          │   DOM Tree (Nodes)  │
+          └─────────────────────┘
+
+
+
 ## Why does the DOM feel **heavy**? 
 
 Because it’s not a simple object sitting inside JS.
